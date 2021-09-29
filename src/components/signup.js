@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Popup from 'reactjs-popup';
  
 const API_URL = "http://localhost:5005";
  
@@ -21,6 +22,9 @@ function SignupPage(props) {
  
   
   return (
+    <Popup trigger={<button> Signup</button>} position="right center">
+    <div className="popup">
+
     <div className="SignupPage">
       <h1>Sign Up</h1>
  
@@ -38,10 +42,9 @@ function SignupPage(props) {
       </form>
  
       { errorMessage && <p className="error-message">{errorMessage}</p> }
- 
-      <p>Already have account?</p>
-      <Link to={"/login"}> Login</Link>
     </div>
+    </div>
+  </Popup>
   )
 }
  

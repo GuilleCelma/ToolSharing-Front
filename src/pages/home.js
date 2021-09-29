@@ -13,7 +13,7 @@ function Home(){
     
     return(
 <div>
-    <form  onSubmit={(e)=>{
+    {/* <form  onSubmit={(e)=>{
         console.log('submit')
         e.preventDefault();
 
@@ -30,7 +30,7 @@ function Home(){
             setPassword(e.target.value)
         }}/>
         <button type="submit">Sing a Song du daa du daa</button>
-    </form>
+    </form> */}
 </div>)
 }
 
