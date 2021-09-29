@@ -6,8 +6,6 @@ import Home from "./pages/home";
 import NewProduct from "./pages/new-product";
 import ProductsList from "./pages/products-list";
 import ProductDetails from "./pages/product-details";
-import Signup from "./components/signup"
-import Login from './components/login'
 import Popup from './components/popup-signup-login'
 
 import Navbar from "./components/navbar";
