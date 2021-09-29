@@ -6,6 +6,7 @@ import NewProduct from "./pages/new-product";
 import ProductsList from "./pages/products-list";
 import ProductDetails from "./pages/product-details";
 import Signup from "./components/signup"
+import Login from './components/login'
 
 import Navbar from "./components/navbar";
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="App">
     <Navbar/>
+    <Login/>
       <Switch>
         <Route exact path={PATHS.HOMEPAGE} component={Home} />
         <Route exact path={PATHS.PRODUCTSLIST} component={ProductsList} />
