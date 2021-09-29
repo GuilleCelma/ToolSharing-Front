@@ -1,20 +1,25 @@
-import React from 'react';
-import Popup from 'reactjs-popup';
+import React,{useState} from 'react';
 import Signup from './signup';
 import Login from './login'
 
-function PopupSignup(){
-   return( <div>
-  <Popup trigger={<button> Signup or Login</button>} position="right center">
-    <div className="popup">
-        <Signup/>
-        <Login/>
-    </div>
-  </Popup>
-  </div>)
+function Popup(){
+
+    const[isShowLogin, setIsShowLogin]=useState(true)
+
+    function toggleShowLogin(){
+      setIsShowLogin(!isShowLogin)
+    }
+
+   return( <div className="popup">
+   {isShowLogin && <Login/>}
+   {!isShowLogin && <Signup/>}
+
+   <button onClick={toggleShowLogin}>{isShowLogin?'Aún no tienes cuenta? registrate':'Ya tienes cuenta? Inicia sessión'}</button>
+    
+    </div>)
 
 
 
 }
 
-export default PopupSignup;
+export default Popup;

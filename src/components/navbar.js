@@ -1,10 +1,17 @@
-import PopupSingup from './popup-signup-login'
+import {Link} from 'react-router-dom'
+import {NEWPRODUCT} from "../utils/paths";
 
-function Navbar() {
+function Navbar(props) {
+  
+  
+
   return (
     <div className="navbar">
       <h1>Navbar</h1>
-      <PopupSingup/>
+
+      <button onClick={props.clickToShow}>Signup or Login</button>
+      <Link to={NEWPRODUCT}>New Product</Link>
+
     </div>
   );
 }

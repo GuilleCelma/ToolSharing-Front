@@ -28,16 +28,13 @@ function Login(){
     }
 
     return(
-
-
-
-        <form onSubmit={handleSubmit}>
-        <input type="text" name="username" value={username} onChange={handleUsername}></input>
-        <input type="password" name="password" value={password} onChange={handlePassword}></input>
-        <button type="submit">Login</button>            
-        </form>
-
-    
+        <div>
+            <form onSubmit={handleSubmit}>
+                <input type="text" name="username" value={username} onChange={handleUsername}></input>
+                <input type="password" name="password" value={password} onChange={handlePassword}></input>
+                <button type="submit">Login</button>           
+            </form>
+        </div>
 
     )
 }
