@@ -8,8 +8,9 @@
 }
 
 .popup{
-    background-color: rgb(221, 221, 221);
-    height:500px;
-    width: 500px;
-    position: absolute
+    background-color: rgb(124, 124, 124);
+    height:400px;
+    width: 400px;
+   
+
 }

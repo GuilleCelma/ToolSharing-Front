@@ -22,11 +22,9 @@ function SignupPage(props) {
  
   
   return (
-    <Popup trigger={<button> Signup</button>} position="right center">
-    <div className="popup">
+    
 
     <div className="SignupPage">
-      <h1>Sign Up</h1>
  
       <form onSubmit={handleSignupSubmit}>
         <label>Email:</label>
@@ -43,8 +41,7 @@ function SignupPage(props) {
  
       { errorMessage && <p className="error-message">{errorMessage}</p> }
     </div>
-    </div>
-  </Popup>
+
   )
 }
  
