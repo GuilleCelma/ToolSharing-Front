@@ -28,8 +28,7 @@ function Login(){
     }
 
     return(
-    <Popup trigger={<button>Login</button>} position="right center">
-        <div className="popup">
+
 
 
         <form onSubmit={handleSubmit}>
@@ -38,8 +37,8 @@ function Login(){
         <button type="submit">Login</button>            
         </form>
 
-        </div>
-    </Popup>
+    
+
     )
 }
 
