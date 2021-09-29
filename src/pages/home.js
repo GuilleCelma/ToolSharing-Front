@@ -9,6 +9,7 @@ const API_URL = "http://localhost:5005";
 function Home(){
 
     const[username, setUsername] = useState('')
+    const[password, setPassword] = useState('')
     
     return(
 <div>
@@ -16,7 +17,7 @@ function Home(){
         console.log('submit')
         e.preventDefault();
 
-        let objectToSubmit = {username:username}
+        let objectToSubmit = {username:username, password:password}
 
         axios
             .post(`${API_URL}/signup`, objectToSubmit)
@@ -24,7 +25,11 @@ function Home(){
         <input type="text" name="username" value={username} onChange={(e)=>{
             setUsername(e.target.value)
         }}/>
-        <button type="submit">Calla la puta boca guiller</button>
+
+        <input type="password" name="password" value={password} onChange={(e)=>{
+            setPassword(e.target.value)
+        }}/>
+        <button type="submit">Sing a Song du daa du daa</button>
     </form>
 </div>)
 }
