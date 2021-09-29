@@ -1,7 +1,7 @@
 import axios from "axios";
 import {useState} from 'react';
 
-const API_URL = "http://localhost:5005/signup";
+const API_URL = "http://localhost:5005";
 
 
 
@@ -19,7 +19,7 @@ function Home(){
         let objectToSubmit = {username:username}
 
         axios
-            .post("http://localhost:5005/signup", objectToSubmit)
+            .post(`${API_URL}/signup`, objectToSubmit)
     }}>
         <input type="text" name="username" value={username} onChange={(e)=>{
             setUsername(e.target.value)
