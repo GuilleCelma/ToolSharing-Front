@@ -15,7 +15,6 @@ function App() {
   return (
     <div className="App">
     <Navbar/>
-    <Signup/>
       <Switch>
         <Route exact path={PATHS.HOMEPAGE} component={Home} />
         <Route exact path={PATHS.PRODUCTSLIST} component={ProductsList} />

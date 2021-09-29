@@ -6,3 +6,10 @@
     background-color: rgb(221, 221, 221);
     padding: 10px;
 }
+
+.popup{
+    background-color: rgb(221, 221, 221);
+    height:500px;
+    width: 500px;
+    position: absolute
+}
